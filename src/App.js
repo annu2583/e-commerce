@@ -1,17 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Header from './components/header-footer/header';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       Hello
-    Hii i am here
-    header
-    footer
-    
-      </header>
-    </div>
+   <Header/>
   );
 }
 
