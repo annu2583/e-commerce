@@ -1,0 +1,9 @@
+button {
+    border: none;
+    width: 183px;
+    height: 44px;
+    padding: 12px 24px 12px 24px;
+    gap: 6px;
+    border-radius: 4px 0px 0px 0px;
+    opacity: 0px;
+}
