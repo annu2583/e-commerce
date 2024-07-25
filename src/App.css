@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+ul li {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+  max-width: 1092px;
+  width: 100%;
+  padding: 0 20px 0 20px;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Variables */
+:root {
+  /*color variables*/
+  --body_color: #202533;
+  --font_color: #5C5F6A;
+  --text_color: #474B57;
+  --input_color: #878A92;
+  --heaing_color: #0E1422;
+}
+
+/* Common css */
+
+.font_section {
+
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24.5px;
+
+}
+
+.title_section {
+
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+
+}
+
+.heading_section {
+
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.05px;
+  text-align: left;
+
 }
