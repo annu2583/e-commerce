@@ -1,0 +1,12 @@
+.notify{
+ font-family: sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 24.5px;
+text-align: center;
+color: white;
+padding: 8px;
+}
+.notification_bar{
+    background-color: black;
+}
