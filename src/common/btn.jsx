@@ -7,7 +7,6 @@ const Btn = (props) => {
             <button className='coll_btn'>View Collection
                 <img src='./images/btn_vector.png' />
             </button>
-     
         </>
     )
 }

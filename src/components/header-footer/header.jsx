@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
+import '../../styles/header.css'
+import { useProducts } from '../../contaxt/Products'
 
 function Header() {
   const [show, setShow] = useState()
+  const { data } = useProducts()
+  console.log(data)
   return (
     <>
       <div className='notification_bar'>
@@ -13,19 +17,16 @@ function Header() {
           <div className='left_section '>
             <img className='toogle' src='./images/menu.png' />
             <img src='./images/logo.png' />
-            <nav className='nav_list'> 
+            <nav className='nav_list'>
               <span className='side_bar'>
-
               </span>
               <ul className='nav_bar '>
                 <li className='nav_item'>
                   <a className='font_section nav_menu' href='#home'>Home</a>
                 </li>
-
                 <li className='nav_item'>
                   <a className='font_section category nav_menu' href='#cate'>Categories <img className='cate_icon' src='./images/vector.png' /></a>
                 </li>
-
                 <li className='nav_item'>
                   <a className='font_section nav_menu' href='#about'>About</a>
                 </li>
@@ -33,7 +34,6 @@ function Header() {
                   <a className='font_section nav_menu' href='#contact'>Contact</a>
                 </li>
               </ul>
-
             </nav>
           </div>
 
@@ -49,6 +49,16 @@ function Header() {
             </div>
           </div>
 
+          {
+            data.map((item, index) => {
+              return (<>
+                <div>
+                  <h1>{item?.data}</h1>
+                  <h2>{item?.id}</h2>
+                </div>
+              </>)
+            })
+          }
 
         </div>
       </div>
