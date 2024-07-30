@@ -2,6 +2,8 @@
 import './App.css';
 import Footer from './components/header-footer/footer';
 import Header from './components/header-footer/header';
+import Banner from './components/home/banner';
+import './styles/banner.css';
 import { ProductsProvider } from './contaxt/Products';
 import { useTheme } from './contaxt/ThemeContaxt';
 import './snippets/button.css';
@@ -29,6 +31,7 @@ function App() {
       <div onClick={() => thememode()}  >
         mode
       </div>
+      <Banner/>
       <Footer />
     </>
   );
