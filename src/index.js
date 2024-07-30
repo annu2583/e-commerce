@@ -8,9 +8,9 @@ import { Provider } from './contaxt/ThemeContaxt';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider>
+    {/* <Provider> */}
       <App />
-    </Provider>
+    {/* </Provider> */}
   </React.StrictMode>
 );
 

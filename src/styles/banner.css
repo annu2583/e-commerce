@@ -26,7 +26,7 @@
 .hero_info {
     display: grid;
     gap: 12px;
-  
+
 }
 
 .coll_btn {
@@ -42,69 +42,51 @@
     top: 66px;
     left: 1011px;
 } */
-.banner_section{
-    display: grid;
-    grid-template-columns: auto auto;
+.banner_section {
+    display: flex;
     justify-content: space-between;
-  
+
 }
-.ellipse{
+
+.ellipse {
     /* position: relative; */
     max-width: 100%;
-    width: 100%;
+    /* width: 100%; */
 }
-.heroic_img{
+
+.heroic_img {
     position: absolute;
     right: 20%;
     transform: translate(-50%, 50%);
-    top: -33%;
+    top: -14%;
     left: 61%;
     max-width: 100%;
     width: 255px;
 }
 
-.hero_image{
-    padding: 66px 0px 8px 0px;
+.hero_image {
+    padding: 89px 0px 17px 0px;
     position: relative;
-    top: 23px;
+    /* top: 23px; */
 }
-.hero_left{
-    padding : 136px 0px 136px 0px;
+
+.hero_left {
+    padding: 136px 0px 136px 0px;
 }
-.banner_bg:after {
+
+/* .banner_bg:after {
     content: '';
-    /* background-image: (url("Burst.png")); */
+
     position: absolute;
     top: -31%;
     right: 0;
     width: 200px;
     height: 200px;
-}
+} */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* @media only screen and (max-width: 640px) {
+    .heroic_img {
+            top: -14%;
+            left: 35%;
+        }
+    } */

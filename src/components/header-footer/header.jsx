@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import '../../styles/header.css'
-import { useProducts } from '../../contaxt/Products'
+import Sidebar from './sidebar'
+// import { useProducts } from '../../contaxt/Products'
 
 function Header() {
-  const [show, setShow] = useState()
-  const { data } = useProducts()
-  console.log(data)
+  const [show, setShow] = useState(false)
+  // const { data } = useProducts()
+  // console.log(data)
   return (
     <>
       <div className='notification_bar'>
@@ -14,24 +15,28 @@ function Header() {
       <div className='container'>
 
         <div className='navbar'>
-          <div className='left_section '>
-            <img className='toogle' src='./images/menu.png' />
+          <div className='left_section'>
+            <img className='toogle' src='./images/menu.png' onClick={()=> {
+              setShow(!show)
+            }} />
             <img src='./images/logo.png' />
-            <nav className='nav_list'>
-              <span className='side_bar'>
-              </span>
+            {
+              show &&
+              <Sidebar />
+            }
+            <nav className='nav_list '>
               <ul className='nav_bar '>
                 <li className='nav_item'>
-                  <a className='font_section nav_menu' href='#home'>Home</a>
+                  <a className='font_section' href='#home'>Home</a>
                 </li>
                 <li className='nav_item'>
-                  <a className='font_section category nav_menu' href='#cate'>Categories <img className='cate_icon' src='./images/vector.png' /></a>
+                  <a className='font_section category' href='#cate'>Categories <img className='cate_icon' src='./images/vector.png' /></a>
                 </li>
                 <li className='nav_item'>
-                  <a className='font_section nav_menu' href='#about'>About</a>
+                  <a className='font_section' href='#about'>About</a>
                 </li>
                 <li className='nav_item'>
-                  <a className='font_section nav_menu' href='#contact'>Contact</a>
+                  <a className='font_section' href='#contact'>Contact</a>
                 </li>
               </ul>
             </nav>
@@ -49,7 +54,7 @@ function Header() {
             </div>
           </div>
 
-          {
+          {/* {
             data.map((item, index) => {
               return (<>
                 <div>
@@ -58,7 +63,7 @@ function Header() {
                 </div>
               </>)
             })
-          }
+          } */}
 
         </div>
       </div>
