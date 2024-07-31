@@ -1,0 +1,13 @@
+.features_section {
+    display: flex;
+    gap: 136px;
+    margin-top: 88px;
+}
+.cards{
+    display: grid;
+    gap: 24px;
+}
+.info{
+    display: grid;
+    gap: 12px;
+}

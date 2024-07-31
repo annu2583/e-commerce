@@ -5,9 +5,6 @@ function Footer() {
   return (
     <>
 
-    <Link to={"/Footer"}>
-Footer
-    </Link>
       <div className='container'>
 
         <div className='footer'>

@@ -14,11 +14,11 @@ a {
 }
 
 .container {
-  max-width: 1116px;
+  max-width: 1092px;
   width: 100%;
   padding: 0 20px 0 20px;
   margin: 0 auto;
-  /* border: 1px solid red; */
+  /* border: 2px solid red; */
 }
 
 button {
@@ -53,6 +53,7 @@ line-height: 24.5px;
 /* text-align: center; */
 color: #5C5F6A;
 ;
+  color: var(--font_color);
 }
 
 .title_section {
@@ -72,5 +73,5 @@ color: #5C5F6A;
   font-weight: 700;
   line-height: 29.05px;
   text-align: left;
-
 }
+
