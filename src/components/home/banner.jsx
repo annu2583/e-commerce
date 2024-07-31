@@ -1,5 +1,6 @@
 import React from 'react'
 import Btn from '../../common/btn';
+import { Link } from 'react-router-dom';
 
 function Banner() {
 
@@ -7,7 +8,10 @@ function Banner() {
     const data = "hello"
     return (
         <>
-
+            {/* <Link to={"/About"}>
+                About
+.
+            </Link> */}
             <div className='hero_section'>
                 <div className='container'>
                     <div className='banner_section'>
@@ -16,11 +20,11 @@ function Banner() {
                                 <h2 className='hero_title'>Fresh Arrivals Online</h2>
                                 <p className='content'>Discover Our Newest Collection Today.</p>
                             </div>
-                    <Btn/>
+                            <Btn />
                         </div>
                         <div className='hero_image'>
                             <div className='banner_bg'>
-                            <img className='burst' src='./images/Burst.png'/>
+                                <img className='burst' src='./images/Burst.png' />
                             </div>
                             <img className='ellipse' src='./images/Ellipse.png' />
                             <img className='heroic_img' src='./images/Hero_img.png' />
