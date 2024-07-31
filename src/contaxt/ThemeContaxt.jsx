@@ -1,35 +1,35 @@
-import { createContext, useContext, useEffect, useState } from "react";
+// import { createContext, useContext, useEffect, useState } from "react";
 
-const ThemeContaxt = createContext()
-
-
-export const Provider = ({ children }) => {
-    const [mode, setMode] = useState('light')
+// const ThemeContaxt = createContext()
 
 
-    useEffect(() => {
-        document.body.className = mode
-    }, [mode])
+// export const Provider = ({ children }) => {
+//     const [mode, setMode] = useState('light')
 
 
-    const thememode = () => {
-        setMode((pre) => (pre === 'light' ? 'dark' : 'light'))
-    }
+//     useEffect(() => {
+//         document.body.className = mode
+//     }, [mode])
 
-    return (
-        <>
-            <ThemeContaxt.Provider value={{
-                thememode,
-                mode
-            }}>
-                {children}
-            </ThemeContaxt.Provider>
-        </>
-    )
 
-}
+//     const thememode = () => {
+//         setMode((pre) => (pre === 'light' ? 'dark' : 'light'))
+//     }
 
-export const useTheme = () => useContext(ThemeContaxt)
+//     return (
+//         <>
+//             <ThemeContaxt.Provider value={{
+//                 thememode,
+//                 mode
+//             }}>
+//                 {children}
+//             </ThemeContaxt.Provider>
+//         </>
+//     )
+
+// }
+
+// export const useTheme = () => useContext(ThemeContaxt)
 
 
 
