@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    gap: 103px;
+    gap: 79px;
 }
 
 .category {
@@ -91,46 +91,8 @@ input:hover:focus {
 
 
 
-@media only screen and (max-width: 640px) {
-    .nav_bar {
-        display: none;
-    }
 
-    .toogle {
-        display: block;
-    }
-
-    input {
-        display: none;
-    }
-
-    .search {
-        display: block;
-    }
-
-    .right_section {
-        display: flex;
-        /* gap: revert-layer; */
-    }
-
-    .left_section {
-        gap: 30px;
-        padding: 20px 0px;
-    }
-
-    .navbar {
-        gap: 42%;
-    }
-
-    .banner_section {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cate_icon {
-        display: none;
-    }
-
+@media only screen and (max-width: 768px) {
     .side_bar {
         background: #efefef;
         color: black;
@@ -151,67 +113,13 @@ input:hover:focus {
         flex-direction: column;
         gap: 20px;
     }
-
-    .link {
-        color: black;
-    }
-
-    .nav_menu {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 640px) {
     .nav_list {
         display: none;
-    }
+    } */
 
-    .toogle {
+     .toogle {
         display: block;
-    }
+    } 
 
     input {
         display: none;
@@ -232,7 +140,10 @@ input:hover:focus {
     }
 
     .navbar {
-        gap: 42%;
+        gap: 358px;
+    }
+    .nav_list {
+        gap: 20px;
     }
 
 }

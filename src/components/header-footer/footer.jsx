@@ -6,7 +6,6 @@ function Footer() {
     <>
 
       <div className='container'>
-
         <div className='footer'>
           <div className='title'>
             <p className='heading_section '>Join Our Newsletter</p>
@@ -19,8 +18,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
-
       <div className='container'>
         <div className='footer-container'>
           <div className='colum_1'>
@@ -46,8 +43,6 @@ function Footer() {
             <a><li>Terms of use</li></a>
             <a><li>Privacy Policy</li></a>
           </div>
-
-          
         </div>
       </div>
     </>

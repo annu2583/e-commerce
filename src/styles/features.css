@@ -11,8 +11,12 @@
     display: grid;
     gap: 12px;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
        
-    /* flex-direction: column;
-    gap: 50px; */
+   .features_sections{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+   }
 }
