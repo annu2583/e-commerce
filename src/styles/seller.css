@@ -8,9 +8,17 @@ letter-spacing: 0.05em;
 /* text-align: left; */
 color: var(--input_color);
 font-family: sans-serif;
-
 }
+/* }
 .best_seller{
     margin-top: 72px;
 text-align: center;
-}
+} */
+ .best_seller{
+    /* display: flex;
+    justify-content: center; */
+    margin-top: 72px;
+ }
+ .card_img{
+    height: 220px;
+ }
